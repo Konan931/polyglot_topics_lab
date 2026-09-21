@@ -1,0 +1,7 @@
+name = "PolyglotKnowledge"
+uuid = "a78f18cb-8e88-4c26-a1a0-8d5d1e10aa44"
+authors = ["Digital Welfare Productions"]
+version = "0.1.0"
+
+[compat]
+julia = "1.10"

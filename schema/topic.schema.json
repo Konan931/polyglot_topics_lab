@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Polyglot Topic",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "source_index",
+    "canonical_name",
+    "aliases",
+    "entity_type",
+    "categories",
+    "summary_short",
+    "difficulty",
+    "metadata_status",
+    "provenance"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^topic\\.[a-z0-9-]+$"
+    },
+    "source_index": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "canonical_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "entity_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "summary_short": {
+      "type": "string",
+      "minLength": 20
+    },
+    "difficulty": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "metadata_status": {
+      "enum": [
+        "generated_seed",
+        "curated",
+        "reviewed"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "source",
+        "source_label"
+      ],
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "source_label": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

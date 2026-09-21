@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Polyglot Topic Relation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "source_id",
+    "target_id",
+    "relation_type",
+    "weight",
+    "metadata_status",
+    "provenance"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^relation\\.[0-9]{4,}$"
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^topic\\."
+    },
+    "target_id": {
+      "type": "string",
+      "pattern": "^topic\\."
+    },
+    "relation_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "weight": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "metadata_status": {
+      "enum": [
+        "generated_seed",
+        "curated",
+        "reviewed"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "source"
+      ],
+      "properties": {
+        "source": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Polyglot Learning Challenge",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "kind",
+    "difficulty",
+    "prompt",
+    "targets",
+    "metadata_status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^challenge\\."
+    },
+    "kind": {
+      "enum": [
+        "lookup",
+        "classification",
+        "sql",
+        "graph",
+        "implementation",
+        "debugging",
+        "comparison"
+      ]
+    },
+    "difficulty": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "prompt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "targets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "metadata_status": {
+      "enum": [
+        "generated_seed",
+        "curated",
+        "reviewed"
+      ]
+    },
+    "expected": {}
+  }
+}

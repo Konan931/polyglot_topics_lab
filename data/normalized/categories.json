@@ -1,0 +1,97 @@
+[
+  {
+    "id": "art",
+    "label": "Art",
+    "description": "Fine art, art history, movements, artists, institutions, and practices."
+  },
+  {
+    "id": "design",
+    "label": "Design",
+    "description": "Graphic, industrial, fashion, typographic, and visual design."
+  },
+  {
+    "id": "media",
+    "label": "Media",
+    "description": "Film, television, streaming, criticism, animation, and entertainment media."
+  },
+  {
+    "id": "gaming",
+    "label": "Gaming",
+    "description": "Video games, genres, platforms, studios, esports, and gaming culture."
+  },
+  {
+    "id": "technology",
+    "label": "Technology",
+    "description": "General technology, devices, computing infrastructure, and industry."
+  },
+  {
+    "id": "software",
+    "label": "Software",
+    "description": "Software development, platforms, operating systems, and open source."
+  },
+  {
+    "id": "data_ai",
+    "label": "Data Ai",
+    "description": "Data science, machine learning, AI, and computational analysis."
+  },
+  {
+    "id": "security_privacy",
+    "label": "Security Privacy",
+    "description": "Cybersecurity, privacy, networking, and hacker culture."
+  },
+  {
+    "id": "science",
+    "label": "Science",
+    "description": "Natural science, research, biotechnology, medicine, space, and quantum topics."
+  },
+  {
+    "id": "health_wellbeing",
+    "label": "Health Wellbeing",
+    "description": "Health, fitness, nutrition, recovery, mindfulness, and wellbeing."
+  },
+  {
+    "id": "travel",
+    "label": "Travel",
+    "description": "Destinations, trip styles, accommodation, and travel culture."
+  },
+  {
+    "id": "nature_outdoors",
+    "label": "Nature Outdoors",
+    "description": "Landscapes, parks, hiking, water sports, and outdoor activity."
+  },
+  {
+    "id": "music",
+    "label": "Music",
+    "description": "Music genres, artists, festivals, and soundtrack culture."
+  },
+  {
+    "id": "news_media",
+    "label": "News Media",
+    "description": "News sources, journalism, reviews, and current-affairs coverage."
+  },
+  {
+    "id": "politics_society",
+    "label": "Politics Society",
+    "description": "Politics, institutions, rights, geopolitics, and social issues."
+  },
+  {
+    "id": "economy_finance",
+    "label": "Economy Finance",
+    "description": "Markets, companies, economic developments, finance, and industry."
+  },
+  {
+    "id": "mobility_transport",
+    "label": "Mobility Transport",
+    "description": "Transport, automotive technology, aviation, rail, and electric vehicles."
+  },
+  {
+    "id": "architecture_places",
+    "label": "Architecture Places",
+    "description": "Architecture, built heritage, museums, cities, and cultural places."
+  },
+  {
+    "id": "lifestyle",
+    "label": "Lifestyle",
+    "description": "Everyday habits, home, culture, routines, and personal interests."
+  }
+]
