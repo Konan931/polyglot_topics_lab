@@ -1,0 +1,9 @@
+:root { color-scheme: dark; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: #111318; color: #e8e3d9; }
+body { margin: 0; }
+main { width: min(1100px, calc(100% - 2rem)); margin: 0 auto; padding: 2rem 0 4rem; }
+header { border-bottom: 1px solid #3a3d45; margin-bottom: 1.5rem; }
+.eyebrow { font-size: .75rem; letter-spacing: .15em; opacity: .7; }
+input { display: block; width: min(100%, 32rem); box-sizing: border-box; margin-top: .5rem; padding: .8rem; background: #191c22; color: inherit; border: 1px solid #4d515b; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+article { border: 1px solid #3a3d45; padding: 1rem; background: #17191f; }
+.meta { opacity: .65; font-size: .8rem; }
